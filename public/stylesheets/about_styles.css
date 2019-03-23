@@ -493,3 +493,15 @@ ol li
 {
   padding-left: 10px;  
 }
+
+pre {  display: block;
+        width: 650px;
+        font-family: monospace;
+		overflow-x: auto;
+		white-space: pre-wrap;
+		white-space: -moz-pre-wrap;
+		white-space: -pre-wrap;
+		white-space: -o-pre-wrap;
+		word-wrap: break-word;
+		background: #E0FFFF;
+	}

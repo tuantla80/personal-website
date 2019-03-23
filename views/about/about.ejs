@@ -136,19 +136,101 @@
     </div>
     <h2 id="h2_1"><b>How to deploy a node.js application to production using Heroku </b></h2>
     <ul>
-        <li>Joining Heroku and Github</li>
+        <li>Heroku and Github</li>
             <ul>
                 <li><a href="https://github.com/" target="_blank" title="Setup a github account">Setup a github account</a> </li>
                 <li><a href="https://www.heroku.com/" target="_blank" title="Setupt a Heroku account">Setupt a Heroku account</a> </li>
                 <li> <a href="https://devcenter.heroku.com/articles/heroku-cli#download-and-install" target="_blank" title="Install Heroku CLI"> Downoad and Install Heroku CLI </a> <br> </li>
                 <li><a href="https://git-scm.com/" target="_blank" title="Download and install version control with Git">Download and install version control with Git</a> </li>
-                Note: If you are installing in Windows, you need to check the option for git bash.
-                > git --version
-
-
+                    <pre>
+Note: If you are installing git in Windows, you need to check the option for git bash.
+Below is some basic git command lines
+> git --version
+> git init  // to set up a new repository
+> notepad .gitignore  // add content node_modules/ to ignore all node_modules files
+> git status // to check the current status
+> git add .  // to add all folders and files into the repository
+> git add routes/   //to get all files in routers into the reposistory
+> git commit -m "Init commit"
+> git add app.js  (or git add . )  // Use this after changing app.js file
+> git commit -m "remove a console.log"
+> git push
+> git remote
+> git push heroku master
+                    </pre>
             </ul>
-        <li>22</li>
+        <li>SSH (Secured Shell) Keys</li>
+        Note: In Windows, you need to use Git Bash
+            <ul>
+                <li>To generate a SSH key pairs</li>
+                    <pre>
+$ ssh-keygen -t rsa -b 4096 -C "tuantla80@gmail.com"
+    -t for type
+    rsa protocol;
+    -b for bit (how many bits)
+    4096 bits for the key
+    -C (captical c) for comment
+                    </pre>
+
+                <li>To check the content after generating</li>
+                    <pre>
+$dir .ssh          // in Windows
+$ls -a -l ~/.ssh   // in Mac or Linux
+Output: id_rsa file (a secret and keep in local machine and not share to anyone)
+        id_rsa.pub file (public file and can share with Github and Heroku)
+                    </pre>
+                <li>To set up SSH agent</li>
+                    <pre>
+$ eval $(ssh-agent -s)    // in Windows
+$eval "$(ssh-agent -s)"   // in Mac and Linux.
+Output: Agent pid 7996    // meaning everything is working well.
+
+$ssh-add .ssh/id_rsa      // in Windows
+$ssh-add -K ~/.ssh/id_rsa // in Mac
+Output: Identity added: .ssh/id_rsa (.ssh/id_rsa)
+                    </pre>
     </ul>
+        <li>Pushing code to Github</li>
+            <ul>
+                <li>Create a new repository in github website</li>
+                    <pre>
+At github website, choose "new repository" -->
+                   choose project title, etc -->
+                   choose "Create reposistory"
+We will use "..or push an existing repository from the command line" and will use the below command lines
+    git remote add origin https://github.com/tuantla80/personal-website.git
+    git push -u origin master
+                    </pre>
+                 <li>Make a title and push new SSH key</li>
+                    <pre>
+At github website, go to Profile section -->
+                   Setting -->
+                   SSH and GPC keys -->
+                   Choose "New SSH key"
+Title: app-personal-website
+
+Input key:
+$ notepad .ssh/id_rsa.pub   // in Windows  Git Bash
+$cat ~/.ssh/id_rsa.pub      // in Mac
+Copy all the content and paste to SSH key in github.
+                    </pre>
+                <li>To test SSH connection</li>
+                    <pre>
+$ ssh -T git@github.com   // Mac or Windows Git Bash
+The authenticity of host 'github.com (192.30.255.112)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'github.com,192.30.255.112' (RSA) to the list of known hosts.
+Hi tuantla80! You've successfully authenticated, but GitHub does not provide shell access.
+                    </pre>
+                <li>Do two above command lines to push code into github</li>
+                    <pre>
+> git remote add origin https://github.com/tuantla80/personal-website.git
+> git push -u origin master
+                    </pre>
+            </ul>
+
+        <li>Deploying node.js to Heroku</li>
 
     <br/>
     <div class="footer">
