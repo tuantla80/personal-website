@@ -6,8 +6,8 @@
     <link rel='stylesheet' href='/stylesheets/about_styles.css' media="all"/>
 </head>
 <body>
-    <h1> How to built and deployment this website </h1>
-    <p> Welcome to the documentation part! </p>
+    <h1>How to built and deployment this website </h1>
+    <p>Welcome to the documentation part! </p>
     <p>
         The topic will serve as a quick introduction into how to build and deployment this website. In this document, you
         will find useful documentation links, as well as examples of some elements you can use in your own content.
@@ -20,119 +20,8 @@
     </ul>
 
     <div class="darkTextBlock">
-        <h2 id="h2_0"> Typical Tasks </h2>
-        <p>
-            To help you get started easier, we have prepared a set of help topics explaining how to perform the most typical
-            operations in ClickHelp. Check the links below.
-        </p>
-        <ul>
-            <li>
-                Get Started
-                <ul>
-                    <li>
-                        <a href="http://doc.clickhelp.co/articles/clickhelp-documentation/basic-concepts" target="_blank"
-                           title="Basic concepts, terms and notions of ClickHelp">
-                            ClickHelp Basic Concepts
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://doc.clickhelp.co/articles/clickhelp-documentation/typical-help-authoring-process"
-                           target="_blank" title="Typical Help Authoring Process in ClickHelp">
-                            Typical Help Authoring Process in ClickHelp
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                Basic Tasks
-                <ul>
-                    <li>
-                        <a href="http://doc.clickhelp.co/articles/clickhelp-documentation/import-or-use-project-template"
-                           target="_blank" title="Starting a new project in ClickHelp - CHM or template">New Project: Import
-                            CHM or Use a Template</a>
-                    </li>
-                    <li>
-                        <a href="http://doc.clickhelp.co/articles/clickhelp-documentation/insert-images" target="_blank"
-                           title="Inserting images to help topics">
-                            Inserting images to help topics
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://doc.clickhelp.co/articles/clickhelp-documentation/insert-links" target="_blank"
-                           title="Inserting links to help topics">
-                            Inserting links to help topics
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://doc.clickhelp.co/articles/clickhelp-documentation/arrange-topics-in-table-of-contents"
-                           target="_blank" title="Manage the table of contents elements">
-                            Arrange Topics in Table of Contents
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://doc.clickhelp.co/articles/clickhelp-documentation/publish-online-manual"
-                           target="_blank" title="Publishing your user manual on the Internet">
-                            Publish User Manual
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://doc.clickhelp.co/articles/clickhelp-documentation/link-to-your-documentation-portal"
-                           target="_blank" title="Create links to your online documentation portal">
-                            Link to Your Documentation Portal
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://doc.clickhelp.co/articles/clickhelp-documentation/create-a-pdf-manual"
-                           target="_blank" title="Create a PDF version of a user manual">
-                            Create a PDF Version of a User Manual
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                Single-Sourcing Techniques
-                <ul>
-                    <li>
-                        <a href="http://doc.clickhelp.co/articles/clickhelp-documentation/share-content-among-topics"
-                           target="_blank" title="Re-using content by sharing it among topics">
-                            Share Content Among Topics
-                        </a>
-                        <br/>
-                    </li>
-                    <li>
-                        <a href="http://doc.clickhelp.co/articles/clickhelp-documentation/typical-conditional-content"
-                           target="_blank" title="Using conditional content in help topics">Conditional Content </a>
-                        <br/>
-                    </li>
-                    <li>
-                        <a href="http://doc.clickhelp.co/articles/clickhelp-documentation/use-variables-in-text"
-                           target="_blank" title="Use variables in the topic text">
+        <h2 id="h2_0"> How to built and deployment this website: To be updated </h2>
 
-                            Use Variables in Text
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                Administration and Workflow
-                <ul>
-                    <li>
-                        <a href="http://doc.clickhelp.co/articles/clickhelp-documentation/create-user-account"
-                           target="_blank" title="Creating a new user account in ClickHelp">
-                            Create a New Account
-                        </a>
-                        <br/>
-                    </li>
-                    <li>
-                        <a href="http://doc.clickhelp.co/articles/clickhelp-documentation/view-topics-assigned-to-me"
-                           target="_blank" title="View topics assigned to me">
-                            View Topics Assigned to Me
-                        </a>
-                        <br/>
-                    </li>
-                </ul>
-            </li>
-        </ul>
     </div>
     <h2 id="h2_1"><b>How to deploy a node.js application to production using Heroku </b></h2>
     <ul>
@@ -230,12 +119,27 @@ Hi tuantla80! You've successfully authenticated, but GitHub does not provide she
                     </pre>
             </ul>
 
-        <li>Deploying node.js to Heroku</li>
-
+        <li>Deploying node.js to Heroku using Heroku CLI</li>
+            <ul>
+                <li>heroku keys:add</li>
+                    <pre>
+personal_website>heroku keys:add
+    Found an SSH public key at C:\Users\tuantla\.ssh\id_rsa.pub
+    ? Would you like to upload it to Heroku? Yes
+    Uploading C:\Users\tuantla\.ssh\id_rsa.pub SSH key... done
+                    </pre>
+                <li>heroku create name_of_project</li>
+                    <pre>
+personal_website>heroku create tuantla  // name_of_project need to be unique in heroku
+    Creating ⬢ tuantla... done
+    https://tuantla.herokuapp.com/ | https://git.heroku.com/tuantla.git
+                    </pre>
+                <li>> git push heroku master</li>
+            </ul>
     <br/>
     <div class="footer">
         <div class="footerInner">
-            &copy; TLA Tuan website <br/>
+            &copy;TRAN LE ANH TUAN Website <br/>
         </div>
     </div>
 </body>
