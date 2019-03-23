@@ -1,0 +1,11 @@
+nav.navbar.navbar-default {margin-bottom: 0px;}
+.btn-group {position: absolute; margin: 7px 0px 0px;}
+.btn {padding: .4em; line-weight: 1em;}
+@media (min-width: 1200px){.container {width: 99%;}}
+@media (min-width: 992px){.container {width: 99%;}}
+@media (min-width: 768px){.container {width: 99%;}}
+
+.table >thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th,
+.table >thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td { padding: 4px;
+                                                                              line-weight: 1;
+}

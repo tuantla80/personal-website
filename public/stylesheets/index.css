@@ -1,0 +1,12 @@
+body {
+  text-align: center;
+}
+.row { margin-right: 11%;
+    margin-left:11%}
+.thumbnail {border: 0 none;
+    box-shadow: none;
+}
+.thumbnail a>img {width: 150px;
+    height:100px;}
+
+

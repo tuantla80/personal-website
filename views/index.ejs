@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <link rel='stylesheet' href='/stylesheets/index.css'/>
+    <style>
+        p.light {
+          font-weight: normal;
+          color: LightGrey ;
+        }
+        p.thick {
+          font-weight: bold;  <!--font-weight: 900;-->
+        }
+    </style>
+</head>
+<body>
+<h1 style="color:blue;"><%= title %></h1>
+<p style="font-size:20px; font-family:Comic Sans MS;">Welcome to my website</p>
+<br><br><br>
+
+<div class="container">
+    <!-- row 1  -->
+    <div class="row">
+        <!-- row 1_1: CV: 1(row)_1(column) -->
+        <div class="col-xs-3 col-sm-2 col-md-3">
+            <div class="thumnail">
+                <a href="/cv">
+                    <img src="images/CV.jpg" alt="CV" height="100" width="100">
+                    <div class="caption">
+                        <p class="thick">My CV</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- row 1_2: machine_learning: 1(row)_2(column) -->
+        <div class="col-xs-3 col-sm-2 col-md-3">
+            <div class="thumnail">
+                <a href="/machine_learning">
+                    <img src="images/machine_learning.jpg" alt="machine_learning" height="100" width="100">
+                    <div class="caption">
+                        <p class="thick">Machine Learning</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- row 1_3: deep_learning -->
+        <div class="col-xs-3 col-sm-2 col-md-3">
+            <div class="thumnail">
+                <a href="/deep_learning">
+                    <img src="images/deep_learning.jpg" alt="deep_learning" height="100" width="100">
+                    <div class="caption">
+                        <p class="light">Deep Learning</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- row 1_4: statistical_model-->
+        <div class="col-xs-3 col-sm-2 col-md-3">
+            <div class="thumnail">
+                <a href="/statistical_model">
+                    <img src="images/statistical_model.jpg" alt="statistical_model" height="100" width="100">
+                    <div class="caption">
+                        <p class="light">Statistical Model</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- End of row 1 -->
+    <br><br><br>
+    <!-- row 2 -->
+    <div class="row">
+        <!-- row 2_1: data_visualization -->
+        <div class="col-xs-3 col-sm-2 col-md-3">
+            <div class="thumnail">
+                <a href="/data_visualization">
+                    <img src="images/data_visualization.jpg" alt="data_visualization" height="100" width="100">
+                    <div class="caption">
+                        <p class="light">Data Visualization</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- row 2_2: tibco_spotfire  -->
+        <div class="col-xs-3 col-sm-2 col-md-3">
+            <div class="thumnail">
+                <a href="/tibco_spotfire">
+                    <img src="images/tibco_spotfire.jpg" alt="tibco_spotfire" height="100" width="140">
+                    <div class="caption">
+                        <p class="light">Tibco Spotfire</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- row 2_3: MEAN -->
+        <div class="col-xs-3 col-sm-2 col-md-3">
+            <div class="thumnail">
+                <a href="/MEAN">
+                    <img src="images/MEAN.jpg" alt="MEAN" height="100" width="140">
+                    <div class="caption">
+                        <p class="light">MEAN Stack Architecture</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- row 2_4: blockchain-->
+        <div class="col-xs-3 col-sm-2 col-md-3">
+            <div class="thumnail">
+                <a href="/blockchain">
+                    <img src="images/blockchain.jpg" alt="blockchain" height="100" width="100">
+                    <div class="caption">
+                        <p class="thick">Blockchain</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- End of row 2 -->
+     <br><br><br>
+    <!-- row 3 -->
+    <div class="row">
+        <!-- row 2_1: data_visualization -->
+        <div class="col-xs-3 col-sm-2 col-md-3">
+            <div class="thumnail">
+                <a href="/about">
+                    <img src="images/about.jpg" alt="about" height="100" width="120">
+                    <div class="caption">
+                        <p class="thick">About this website</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+     </div>
+    <!-- End of row 2 -->
+
+    <br><br><br>
+    <div id="footer">
+            <p style="font-size:15px; font-family:Comic Sans MS;">Contact: Tran Le Anh Tuan - <a href="tuantla80@gmail.com">tuantla80@gmail.com</a> - (82) -
+                10 6481 2305</p>
+    </div><!--// footer -->
+
+</div>
+</body>
+</html>
